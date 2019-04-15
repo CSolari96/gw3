@@ -1,0 +1,234 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+	display:block;
+}
+/*-----------------------------------
+...............HEADER.................
+----------------------------------- */
+header{
+	background: url(../images/background1.jpg) fixed center/cover;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+section{
+	height: 100vh;
+}
+.navi{
+	background: url(../images/background2.jpg) fixed center/cover;
+}
+.characters{
+	background: url(../images/background3.jpg) fixed center/cover;
+}
+.parallax-img{
+	position: absolute;
+}
+#island1{
+	width: 15%;
+	top: 10%;
+	left: 30%;
+	z-index: 10;
+}
+#island2{
+	height: 110vh;
+	top: -2%;
+	left: -2%;
+	z-index: 10;
+	display:none;
+}
+#island3{
+	width: 25%;
+	top: -10%;
+	right: 0;
+	z-index: 30;
+}
+#logo{
+	width: 40%;
+	z-index: 20;
+	position:relative;
+	left: 5%;
+	top: -10%;
+	pointer-events: none;
+}
+#cloud1{
+	width: 80%;
+	right: 0;
+	z-index: 50;
+	top: 80%;
+}
+#cloud2{
+	width: 45%;
+	left: 0;
+	z-index: 50;
+	top: 80%;
+}
+/*.............NAV..................*/
+/* https://tympanus.net/codrops/2013/05/30/simple-icon-hover-effects/ */
+nav{
+	z-index: 100;
+	position:fixed;
+	top: .2%;
+	display: flex;
+}
+.hi-icon-wrap {
+	text-align: center;
+	margin: 0 auto;
+	padding: 2em 0 3em;
+}
+.hi-icon {
+	display: inline-block;
+	font-size: 0px;
+	cursor: pointer;
+	margin: 15px 30px;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+}
+
+.hi-icon:after {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.hi-icon:before {
+	font-family: 'ecoicon';
+	speak: none;
+	font-size: 48px;
+	line-height: 90px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+}
+
+.hi-icon-archive:before {
+	content: "\02c2";
+}
+
+.hi-icon-chat:before {
+	content: "\2302";
+}
+
+.hi-icon-bookmark:before {
+	content: "\02c3";
+}
+
+.hi-icon-effect-8 .hi-icon {
+	background: rgba(255,255,255,0.1);
+	-webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+	-moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
+	transition: transform ease-out 0.1s, background 0.2s;
+}
+
+.hi-icon-effect-8 .hi-icon:after {
+	top: 0;
+	left: 0;
+	padding: 0;
+	z-index: -1;
+	box-shadow: 0 0 0 2px rgba(255,255,255,0.1);
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.hi-icon-effect-8 .hi-icon:hover {
+	background: rgba(255,255,255,0.3);
+	-webkit-transform: scale(0.93);
+	-moz-transform: scale(0.93);
+	-ms-transform: scale(0.93);
+	transform: scale(0.93);
+	color: #fff;
+}
+
+.hi-icon-effect-8 .hi-icon:hover:after {
+	-webkit-animation: sonarEffect 1.3s ease-out 75ms;
+	-moz-animation: sonarEffect 1.3s ease-out 75ms;
+	animation: sonarEffect 1.3s ease-out 75ms;
+}
+
+@-webkit-keyframes sonarEffect {
+	0% {
+		opacity: 0.3;
+	}
+	40% {
+		opacity: 0.5;
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #ffffff, 0 0 0 10px rgba(255,255,255,0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #ffffff, 0 0 0 10px rgba(255,255,255,0.5);
+		-webkit-transform: scale(1.5);
+		opacity: 0;
+	}
+}
+@-moz-keyframes sonarEffect {
+	0% {
+		opacity: 0.3;
+	}
+	40% {
+		opacity: 0.5;
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #ffffff, 0 0 0 10px rgba(255,255,255,0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #ffffff, 0 0 0 10px rgba(255,255,255,0.5);
+		-moz-transform: scale(1.5);
+		opacity: 0;
+	}
+}
+@keyframes sonarEffect {
+	0% {
+		opacity: 0.3;
+	}
+	40% {
+		opacity: 0.5;
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #ffffff, 0 0 0 10px rgba(255,255,255,0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #ffffff, 0 0 0 10px rgba(255,255,255,0.5);
+		transform: scale(1.5);
+		opacity: 0;
+	}
+}
+/* -----------------------------------
+...............LAYOUT.................
+----------------------------------- */
+
+/* -----------------------------------
+.............TYPOGRAPHY...............
+----------------------------------- */
+a{
+	text-decoration: none;
+}
+/* -----------------------------------
+...............FOOTER.................
+----------------------------------- */
+
+/* -----------------------------------
+................MISC..................
+----------------------------------- */
+
+/* -----------------------------------
+...........MEDIA QUERIES..............
+----------------------------------- */
