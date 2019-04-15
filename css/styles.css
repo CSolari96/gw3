@@ -7,4 +7,76 @@
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
 }
+body{
 
+	background-position: center top;
+}
+/*-----------------------------------
+...............HEADER.................
+----------------------------------- */
+header{
+	background: url(../images/background1.jpg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+.navi{
+
+}
+.characters{
+
+}
+.parallax-img{
+	position: absolute;
+}
+#island1{
+	width: 15%;
+	top: 10%;
+	left: 30%;
+	z-index: 10;
+}
+#island2{
+	height: 110vh;
+	top: -2%;
+	left: -2%;
+	z-index: 10;
+}
+#island3{
+	width: 25%;
+	top: 0;
+	right: 0;
+	z-index: 30;
+}
+#logo{
+	width: 40%;
+	z-index: 20;
+	position:relative;
+	left: 5%;
+	top: -10%;
+}
+#cloud2{
+	width: 45%;
+	left: 0;
+	z-index: 50;
+	top: 80%;
+}
+/* -----------------------------------
+...............LAYOUT.................
+----------------------------------- */
+
+/* -----------------------------------
+.............TYPOGRAPHY...............
+----------------------------------- */
+
+/* -----------------------------------
+...............FOOTER.................
+----------------------------------- */
+
+/* -----------------------------------
+................MISC..................
+----------------------------------- */
+
+/* -----------------------------------
+...........MEDIA QUERIES..............
+----------------------------------- */
