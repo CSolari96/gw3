@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+#lang-page {
+	width: 90%;
+	margin: auto;
+	max-width: 1000px;
+}
+
+#lang-page p {
+	padding: 2% 0;
+}
+
+#lang-intro {
+	text-align: center;
+}
+
+#translator {
+	background-image: url("../images/translator.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#translator img {
+	width: 100%;
+	max-width: 400px;
+}
+
+#translator h2, #translator p {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#translator h2 {
+	font-size: 3.5rem;
+}
+
+#lang-translations {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#lang-translations h2 {
+	display: none;
+}
+
+#lang-translations figure {
+	margin: auto;
+	width: 40%;
+}
+
+#lang-translations figure:hover {
+	box-shadow: 5px 5px 5px #dddddd;
+}
+
+#lang-translations figure img {
+	width: 100%;
+	max-width: 150px;
+}
+
+@media (min-width: 500px) {
+	#translator {
+		width: 35%;
+		margin: 2.5%;
+		float: left;
+		height: 40vh;
+	}
+
+	#lang-translations {
+		width: 55%;
+	}
+
+	#lang-origin {
+		clear: both;
+	}
+}
+
+@media (min-width: 875px) {
+	#translator {
+		height: 70vh;
+		width: 45%;
+	}
+
+	#lang-translations {
+		width: 100%;
+	}
+
+	#lang-translations figure{
+		width: 28%;
+	}
+
+	.right-content {
+		width: 50%;
+		float: right;
+	}
+}
