@@ -7,25 +7,25 @@
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
 }
-body{
-
-	background-position: center top;
-}
 /*-----------------------------------
 ...............HEADER.................
 ----------------------------------- */
 header{
-	background: url(../images/background1.jpg);
+	background: url(../images/background1.jpg) fixed center/cover;
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100%;
+	height: 100vh;
+}
+section{
+	height: 100vh;
 }
 .navi{
-
+	background: url(../images/background2.jpg) fixed center/cover;
 }
 .characters{
-
+	background: url(../images/background3.jpg) fixed center/cover;
 }
 .parallax-img{
 	position: absolute;
@@ -41,10 +41,11 @@ header{
 	top: -2%;
 	left: -2%;
 	z-index: 10;
+	display:none;
 }
 #island3{
 	width: 25%;
-	top: 0;
+	top: -10%;
 	right: 0;
 	z-index: 30;
 }
@@ -54,6 +55,12 @@ header{
 	position:relative;
 	left: 5%;
 	top: -10%;
+}
+#cloud1{
+	width: 80%;
+	right: 0;
+	z-index: 50;
+	top: 80%;
 }
 #cloud2{
 	width: 45%;

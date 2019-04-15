@@ -17,24 +17,22 @@
 </head>
 
 <body>
-	<header>
-		<img id="island1" class="parallax-img" src="images/island1.png" alt="floating island 1">
-		<img id="island2" class="parallax-img" src="images/island2.png" alt="floating island 2">
-		<img id="island3" class="parallax-img" src="images/island3.png" alt="floating island 3">
-		<img id="logo" src="images/logo1.png" alt="logo">
-		<img id="cloud1" class="parallax-img" src="images/cloud1.png" alt="cloud 1">
-		<img id="cloud2" class="parallax-img" src="images/cloud2.png" alt="cloud 2">
+	<header class="my-paroller" data-paroller-factor="-0.3" data-paroller-type="background" data-paroller-direction="vertical">
+		<img id="island1" class="parallax-img my-paroller" data-paroller-factor="-0.3" data-paroller-type="foreground" data-paroller-direction="vertical" src="images/island1.png" alt="floating island 1">
+		<img id="island2" class="parallax-img my-paroller" data-paroller-factor="-0.3" data-paroller-type="foreground" data-paroller-direction="vertical" src="images/island2.png" alt="floating island 2">
+		<img id="island3" class="parallax-img my-paroller" data-paroller-factor="-.3" data-paroller-type="foreground" data-paroller-direction="vertical"src="images/island3.png" alt="floating island 3">
+		<img id="logo" class="parallax-img my-paroller" data-paroller-factor="-.1" data-paroller-type="foreground" data-paroller-direction="vertical" src="images/logo1.png" alt="logo">
 	</header>
-	<section class="navi">
+	<section class="navi my-paroller" data-paroller-factor="-0.3" data-paroller-type="background" data-paroller-direction="vertical">
 		<h2>Viperwolf got your tongue?</h2>
 		<h3>Learn some Na'vi to communicate while on Pandora</h3>
 	</section>
-	<section class="characters">
+	<section class="characters my-paroller" data-paroller-factor="-0.3" data-paroller-type="background" data-paroller-direction="vertical">
 		<h2>Viperwolf got your tongue?</h2>
 		<h3>Learn some Na'vi to communicate while on Pandora</h3>
 	</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/scroll-with.ease.js"></script>
+	<script type="text/javascript" src="js/jquery.paroller.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 
