@@ -58,18 +58,6 @@ section{
 	top: -10%;
 	pointer-events: none;
 }
-#cloud1{
-	width: 80%;
-	right: 0;
-	z-index: 50;
-	top: 80%;
-}
-#cloud2{
-	width: 45%;
-	left: 0;
-	z-index: 50;
-	top: 80%;
-}
 /*.............NAV..................*/
 /* https://tympanus.net/codrops/2013/05/30/simple-icon-hover-effects/ */
 nav{
