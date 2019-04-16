@@ -7,7 +7,23 @@
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
 }
-
+body{
+	background: url(../images/lang-back.jpg);
+	background-position: center;
+	background-size: cover;
+}
+h1, h2{
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	color: white;
+}
+#placeholder{
+	font-size: 2rem;
+}
+p{
+	font-family: "Open Sans", sans-serif;
+	color:white;
+}
 #lang-page {
 	width: 90%;
 	margin: auto;
@@ -69,9 +85,20 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 #lang-origin figcaption {
 	font-size: 0.75rem;
 }
+#lang-origin{
+	margin-bottom: 10%;
+}
+a{
+	text-decoration: none;
+}
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 nav{
 	z-index: 100;
-	position:fixed;
 	top: .2%;
 	display: flex;
 }
@@ -91,7 +118,7 @@ nav{
 	text-align: center;
 	position: relative;
 	z-index: 1;
-	color: #fff;
+	color: #282828;
 }
 
 .hi-icon:after {
@@ -132,7 +159,7 @@ nav{
 }
 
 .hi-icon-effect-8 .hi-icon {
-	background: rgba(255,255,255,0.1);
+	background: rgba(255,255,255,0.8);
 	-webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
 	-moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
 	transition: transform ease-out 0.1s, background 0.2s;
@@ -157,7 +184,7 @@ nav{
 	-moz-transform: scale(0.93);
 	-ms-transform: scale(0.93);
 	transform: scale(0.93);
-	color: #fff;
+	color: #383838;
 }
 
 .hi-icon-effect-8 .hi-icon:hover:after {

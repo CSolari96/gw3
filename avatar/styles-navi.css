@@ -74,7 +74,6 @@ nav{
 	position:fixed;
 	top: .2%;
 	display: flex;
-	justify-content: center;
 }
 .hi-icon-wrap {
 	text-align: center;
@@ -92,7 +91,7 @@ nav{
 	text-align: center;
 	position: relative;
 	z-index: 1;
-	color: #fff;
+	color: #282828;
 }
 
 .hi-icon:after {
@@ -133,7 +132,7 @@ nav{
 }
 
 .hi-icon-effect-8 .hi-icon {
-	background: rgba(255,255,255,0.1);
+	background: rgba(255,255,255,0.8);
 	-webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
 	-moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
 	transition: transform ease-out 0.1s, background 0.2s;
@@ -158,7 +157,7 @@ nav{
 	-moz-transform: scale(0.93);
 	-ms-transform: scale(0.93);
 	transform: scale(0.93);
-	color: #fff;
+	color: #383838;
 }
 
 .hi-icon-effect-8 .hi-icon:hover:after {
