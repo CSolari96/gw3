@@ -66,6 +66,12 @@ img.glow {
   opacity:0;
 }
 /* nav */
+header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 a{
 	text-decoration: none;
 }
