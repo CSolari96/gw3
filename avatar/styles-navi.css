@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+/*=== MP4 ====*/
+
+.video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -10;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.site-content {
+  display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+  flex: 20%;
+  padding: .5px;
+}
+
+.container {
+  position:relative;
+  width:600px;
+  height:600px;
+}
+
+/*=== Image Hover Glow ====*/
+
+img {
+  position:absolute;
+	color: #7CFC00;
+  max-height:90%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+img.main {
+  z-index:2;
+}
+img.main:hover ~ img.glow {
+  opacity: 1;
+}
+img.glow {
+  z-index:1;
+  transform: scale(1.01) translate(-50%, -50%);
+  -webkit-transform: scale(1.01) translate(-50%, -50%);
+  filter: brightness(0) invert(1) blur(5px);
+  -webkit-filter: brightness(0) invert(1) blur(5px);
+  opacity:0;
+}
