@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+#lang-page {
+	width: 90%;
+	margin: auto;
+	max-width: 1000px;
+}
+
+#lang-page p {
+	padding: 2% 0;
+}
+
+#lang-intro {
+	text-align: center;
+}
+
+#translator {
+	width: 100%;
+	font-size: 2rem;
+}
+
+#translator h2 {
+	width: 90%;
+	margin: auto;
+}
+
+#lang-translations {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#lang-translations h2 {
+	display: none;
+}
+
+#lang-translations figure {
+	margin: auto;
+	width: 40%;
+	filter: opacity(60%);
+}
+
+#lang-translations figure:hover {
+	filter: opacity(100%);
+}
+
+#lang-translations figure img {
+	width: 100%;
+	max-width: 300px;
+}
+
+#lang-origin figure {
+	margin: auto;
+	text-align: center;
+}
+
+#lang-origin figure img {
+	max-width: 150px;
+	width: 100%;
+}
+
+#lang-origin figcaption {
+	font-size: 0.75rem;
+}
+
+@keyframes load {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.animate {
+	animation: load 3s ease forwards;
+}
+
+@media (min-width: 500px) {
+	#lang-translations figure {
+		width: 30%;
+	}
+
+	#lang-origin figure {
+		float: left;
+		width: 20%;
+		padding-right: 3%;
+	}
+}
+
+@media (min-width: 875px) {
+	#translator {
+		width: 45%;
+		float: left;
+	}
+
+	#lang-translations {
+		width: 50%;
+		float: right;
+	}
+
+	#lang-translations figure{
+		width: 28%;
+	}
+
+	#lang-origin {
+		clear: both;
+	}
+
+	#lang-origin p {
+		padding: 2% 0 0 0;
+	}
+}
