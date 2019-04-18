@@ -205,4 +205,4 @@
         });
     };
     $.fn.glow.enabled = true;
-})(jQuery); 
+});

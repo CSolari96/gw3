@@ -17,8 +17,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
   z-index: -10;
   min-width: 100%;
   min-height: 100%;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -30,6 +29,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 	align-items: baseline;
   flex: 20%;
   padding: .5px;
+	height: 90vh;
 }
 
 .container {
@@ -41,10 +41,10 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 /*=== Image Hover Glow ====*/
 
 img {
-  position:absolute;
+  position: absolute;
 	color: #7CFC00;
   max-height:90%;
-  top:50%;
+  bottom:-30%;
   left:50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -65,19 +65,26 @@ img.glow {
   -webkit-filter: brightness(0) invert(1) blur(5px);
   opacity:0;
 }
-/* nav */
+
+.lb-data .lb-number {
+	display: none;
+}
 header{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 }
 a{
 	text-decoration: none;
 }
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 nav{
 	z-index: 100;
-	position:fixed;
 	top: .2%;
 	display: flex;
 }
@@ -213,4 +220,9 @@ nav{
 		transform: scale(1.5);
 		opacity: 0;
 	}
+}
+@media (min-width: 1665px){
+	.video {
+	  height: auto;
+	  width: 100vw;
 }
